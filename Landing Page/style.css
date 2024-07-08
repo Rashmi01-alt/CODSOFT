@@ -26,7 +26,7 @@ html{
     font-weight: 500;
     background-color: rgb(250, 111, 61);
     border-radius: 10px;
-    border: 1px solid rgb(250, 111, 61);;
+    border: 1px solid rgb(250, 111, 61);
 }
 .btn:hover{
     color: rgb(250, 111, 61);;
@@ -46,7 +46,7 @@ section{
     font-size: 40px;
 }
 .sec-top h1 span{
-    color: #B809C3;
+    color: rgb(250, 111, 61);
 }
 
 .boxs{
@@ -59,32 +59,65 @@ section{
 }
 /* start Header */
 
-header{
-    
+header {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: transparent;
+    background: white;
     z-index: 1000;
-
+    
 }
-header.active{
+
+header.active {
     background-color: #1c1e22;
     border-bottom: 1px solid #8888884a;
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+  
+    height: 75px;
+    padding: 20px;
 }
-header nav .nav-links a{
+
+header nav .logo {
+    height: 85px;
+  margin-right: 10px;
+    
+}
+
+header nav .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav .nav-links .brand {
+    margin-right: auto;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(250, 111, 61);
+    text-decoration: underline rgb(250, 111, 61);
+}
+
+header nav .nav-links .links {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-links .links a {
     color: #000000;
-    margin-left: 50px;
+    margin-left: 30px;
+    text-decoration: none;
 }
-header nav .nav-links a:hover,
-header nav .nav-links a.active{
-    color: #B809C3;
+
+header nav .nav-links .links a:hover,
+header nav .nav-links .links a.active {
+    color: rgb(250, 111, 61);
 }
 
 #btn-menu{
@@ -94,10 +127,11 @@ header nav .nav-links a.active{
 /* start Hero */
 
 .hero {
+    margin-top: 70px;
     padding-top: 30px;
     background: url(img/BEIGE.jpg) no-repeat center center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 50vh;
 
     display: flex;
     justify-content: center;
@@ -152,7 +186,7 @@ header nav .nav-links a.active{
     font-size: 45px;
 }
 .about .content h1 span{
-    color:#B809C3 ;
+    color:rgb(250, 111, 61) ;
 }
 .about .content h3{
     color: #1c1e22;
@@ -169,7 +203,7 @@ header nav .nav-links a.active{
 /* start Services */
 
 .services{
-    background-color: #f0f4f9;
+    background-color: #f5dfc2;
     text-align: center;
 }
 .services .boxs .box{
@@ -236,9 +270,7 @@ header nav .nav-links a.active{
 
 /* start Contact */
 
-.contact{
-    background: #f0f4f9;
-}
+
 .contact form{
     width: 60%;
     margin: auto;
